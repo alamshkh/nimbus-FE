@@ -1,0 +1,12 @@
+@model NimbusBank.Frontend.Models.LoanApplication
+
+<form method="post">
+    <input asp-for="Name" placeholder="Name"/><br/>
+    <input asp-for="Mobile" placeholder="Mobile"/><br/>
+    <input asp-for="Email" placeholder="Email"/><br/>
+    <input asp-for="PAN" placeholder="PAN"/><br/>
+    <input asp-for="Aadhaar" placeholder="Aadhaar"/><br/>
+    <button type="submit">Submit</button>
+</form>
+
+<p>@ViewBag.Message</p>
