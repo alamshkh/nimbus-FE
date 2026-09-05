@@ -25,7 +25,7 @@ namespace NimbusBank.Frontend.Controllers
             var json = JsonSerializer.Serialize(model);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            var response = await _httpClient.PostAsync("https://YOUR-BACKEND-URL/api/loan", content);
+            var response = await _httpClient.PostAsync("https://nimbusloan-be-ckcvgzg0ecbwctf3.centralindia-01.azurewebsites.net/api/loan", content);
 
             ViewBag.Message = response.IsSuccessStatusCode ? "Success!" : "Error!";
             return View();
