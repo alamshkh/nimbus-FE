@@ -15,7 +15,10 @@ namespace NimbusBank.Frontend.Controllers
             _httpClient = factory.CreateClient();
         }
 
-        public IActionResult Index() => View();
+        public IActionResult Index()
+{
+    return Content("Frontend is working");
+}
 
         public IActionResult Apply() => View();
 
